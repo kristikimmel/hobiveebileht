@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: "Oswald", serif;
+    font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;
     line-height: 1.4;
@@ -24,6 +24,14 @@ a {
 }
 .text-center {
     text-align: center;
+}
+
+/* padding */
+.py-1 {
+    padding: 4rem 0;
+}
+.p-1 {
+    padding: 3rem;
 }
 
 .btn {
@@ -52,6 +60,11 @@ a {
     background: #444;
 }
 
+/* background */
+.bg-light {
+    background: #1a1919;
+    color:#f3f3f3
+}
 
 /* navbar */
 #navbar {
@@ -105,12 +118,53 @@ a {
 /*LARGE heading*/
 
 .l-heading {
-    font-size: 4rem;
+    font-size: 11.25rem;
     margin-bottom: 0.75rem;
     line-height: 1.1;
+    font-weight: 400;
+}
+
+.par {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* MEDIUM heading */
+
+.m-heading {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+    font-weight: 400;
 }
 
 .par {
     font-size: 1.1rem;
     margin-bottom: 2rem;
 }
+
+
+/* about */
+#about .items {
+    display: flex;
+}
+#about .items .item {
+    flex: 1;
+}
+
+#about .item h3 {
+    margin-bottom: 30px;
+  }
+  
+/* what */
+#what .items {
+    display: flex;
+}
+#what .items .item {
+    flex: 1;
+}
+
+#what .item h3 {
+    margin-bottom: 30px;
+  }
+
