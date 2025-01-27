@@ -11,11 +11,20 @@ body {
     font-optical-sizing: auto;
     font-weight: 200;
     line-height: 1.4;
+    scroll-behavior: smooth;
 }
 
 a {
     text-decoration: none;
 }
+
+p {
+  margin-bottom: 30px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+
 
 /* page basic style */
 /* text */
@@ -60,13 +69,68 @@ a {
     background: #444;
 }
 
+/* circle button */
+
+.circle-button {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  width: 50px; 
+  height: 50px;
+  background-color: #fff; 
+  color: black; 
+  font-size: 24px; 
+  text-decoration: none;
+  border-radius: 50%; 
+  border: none; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: all 0.3s ease; 
+}
+
+.circle-button:hover {
+  background-color: #adadad; 
+  transform: translateY(2px); 
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.circle-button:active {
+  transform: translateY(4px); 
+}
+
+
+/* Loendi stiilimine */
+ul {
+  list-style-type: square;  /* Bulleti stiili muutmine: ruut, ring, täpp, jne */
+  padding-left: 20px;        /* Loendi vasakpoolne sisu veidi sissepoole nihutamine */
+}
+
+li {  
+  color: #f3f3f3;
+  margin-bottom: 30px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  word-spacing: 3px;      /* Teksti värv */
+}
+
+
+
 /* background */
 .bg-primary {
-    background: #1a1919;
+    background: #2c2b2b;
     color:#f3f3f3
 }
 
 /* navbar */
+
+nav a {
+  text-decoration: none; 
+  color: inherit;
+}
+
+nav h1 {
+  cursor: pointer;
+}
+
 #navbar {
     background: #000000;
     color: #fff;
@@ -118,9 +182,28 @@ section {
 }
 
 
+/* Hidden-section */
+
+.hidden-section {
+  display: none;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+.hidden-section:target {
+  display: block;
+  opacity: 1;
+  height: auto;
+  overflow: visible;
+}
+
+
 /* showcase */
 #showcase {
-    background: #000000 url('./img/avalehe_pilt_meist_cropitud.jpg');
+    background: #000000 url('./img/avalehe_pilt_meist_cropitud.jpg') no-repeat center center;
+    background-size: cover;
     height: 100vh;
     color: #fff;
 }
@@ -135,6 +218,89 @@ section {
     padding: 0 2rem;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+#showcase_about {
+  background: #000000 url('./img/taust1.png') no-repeat center center;
+  background-size: cover; 
+  height: 100vh; 
+  color: #fff;
+}
+
+
+#showcase_about .showcase-content-about {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+#services {
+  background: #000000 url('./img/taust2.jpg') no-repeat center center;
+  background-size: cover; 
+  height: 100vh; 
+  color: #fff;
+}
+
+
+#services .services-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+#gallery_1 {
+  background: #000000 url('./img/taust3.png') no-repeat center center;
+  background-size: cover; 
+  height: 100vh; 
+  color: #fff;
+}
+
+
+#gallery_1 .gallery-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#contact_1 {
+  background: #000000 url('./img/taust4.jpg') no-repeat center center;
+  background-size: cover; 
+  height: 100vh; 
+  color: #fff;
+}
+
+
+#contact_1 .contact-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
 
 /*LARGE heading*/
 
