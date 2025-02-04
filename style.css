@@ -12,6 +12,7 @@ body {
     font-weight: 200;
     line-height: 1.4;
     scroll-behavior: smooth;
+    background-color: #1a1919;
 }
 
 a {
@@ -87,6 +88,7 @@ p {
   transition: all 0.3s ease; 
 }
 
+
 .circle-button:hover {
   background-color: #adadad; 
   transform: translateY(2px); 
@@ -97,11 +99,18 @@ p {
   transform: translateY(4px); 
 }
 
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
 
 /* Loendi stiilimine */
 ul {
-  list-style-type: square;  /* Bulleti stiili muutmine: ruut, ring, täpp, jne */
-  padding-left: 20px;        /* Loendi vasakpoolne sisu veidi sissepoole nihutamine */
+  list-style-type: square; 
+  padding-left: 20px;     
 }
 
 li {  
@@ -109,14 +118,12 @@ li {
   margin-bottom: 30px;
   font-size: 20px;
   letter-spacing: 1px;
-  word-spacing: 3px;      /* Teksti värv */
+  word-spacing: 3px; 
 }
-
-
 
 /* background */
 .bg-primary {
-    background: #2c2b2b;
+    background: #1a1919;
     color:#f3f3f3
 }
 
@@ -189,7 +196,7 @@ section {
   opacity: 0;
   height: 0;
   overflow: hidden;
-  transition: all 0.4s ease-in-out;
+  transition: none;
 }
 
 .hidden-section:target {
@@ -297,11 +304,6 @@ section {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-
-
-
-
-
 /*LARGE heading*/
 
 .l-heading {
@@ -365,11 +367,11 @@ section {
   }
   
   .gallery-section .m-heading {
-    margin-bottom: 4rem; /* Lisab vahe pealkirja ja pildisektsiooni vahele */
+    margin-bottom: 4rem; 
   }
   
   .gallery-container {
-    overflow: visible; /* Laseb suurendatud pildil väljuda konteinerist */
+    overflow: visible; 
     scroll-snap-type: x mandatory;
     display: flex;
     justify-content: center;
@@ -379,32 +381,31 @@ section {
   .gallery {
     display: flex;
     gap: 1rem;
-    position: relative; /* Positsioneerimiseks vajalik */
+    position: relative;
   }
   
   .gallery-item {
-    flex: 0 0 auto; /* Fixed width */
+    flex: 0 0 auto; 
     scroll-snap-align: center;
     transition: transform 0.4s ease, z-index 0.4s ease;
     margin: 0 1rem;
-    width: 200px; /* Define uniform width */
-    height: 200px; /* Define uniform height */
-    position: relative; /* Positsioneerimine suurendamiseks */
+    width: 200px; 
+    height: 200px; 
+    position: relative; 
   }
   
   .gallery-item img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    object-fit: cover; /* Crop the image to fit the container */
+    object-fit: cover; 
     transition: transform 0.4s ease;
   }
   
-  /* Hover effect */
   .gallery-item:hover {
-    transform: scale(2); /* Suurendab pilti rohkem */
-    z-index: 10; /* Tõstab pildi teiste elementide kohale */
-    position: relative; /* Tagab, et suurendatud pilt jääb oma konteksti */
+    transform: scale(2); 
+    z-index: 10; 
+    position: relative;
   }
   
   
@@ -500,10 +501,10 @@ section {
 
 
   #footer {
-    background: #1a1919; /* Sama taustvärv, mis galeriil */
-    color: #f3f3f3; /* Teksti värv */
+    background: #1a1919;
+    color: #f3f3f3; 
     padding: 1rem;
     text-align: center;
-    border-top: 1px solid #ffffff; /* Valge joon ümber */
+    border-top: 1px solid #ffffff;
   }
   
